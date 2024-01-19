@@ -1,0 +1,1 @@
+[{"url": "Eldora-Mountain-Resort", "name": "Eldora Mountain Resort", "dense_url": "eldoramountainresort", "location": "USA - Colorado"}, {"url": "Winter-Park", "name": "Winter Park", "dense_url": "winterpark", "location": "USA - Colorado"}, {"url": "Loveland", "name": "Loveland", "dense_url": "loveland", "location": "USA - Colorado"}]

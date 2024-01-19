@@ -1,0 +1,11 @@
+todo:
+- additional testing
+- make and stick to conventions (temp variable names, specific file roles, single vs double quotes etc.)
+- in shell 'forecast' command, find a way to parse mountains with spaces in the name (i.e. being able to run "f winter park 3" rather than "f winterpark 3")
+- match mountain input with Mountain.name instead of or in addition to Mountain.denseurl (i.e. "irwincatskiing" would match the name "Irwin Catskiing by Eleven" but not the denseurl "csirwin")
+- cut out "usa - " in mountain location if the final project were to be US exclusive
+- expand config options (cm vs in, prompt vs command line mode, etc.)
+- generate and edit home mountains list from user input
+- implement proper waits in scrape_mountains
+- remove underscores when creating alnum inputs (currently "love_land" doesn't match "Loveland")
+
