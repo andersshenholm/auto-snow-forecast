@@ -29,10 +29,7 @@ def home_mountain_forecast():
     return
 
 Time to complete:
-90, 55, 67, 65, 88 > 73 avg
-
-Notes: When running with visible browser windows, I was surpised to see that the iteration code
-opened all three windows without waiting for the first selenium script to end. (basically the same behavior as TEST 1 code)
+82, 77, 88, 67, 81 > 79 avg
 
 --------TEST 3---------
 Single mountain in home_mountain_list test, 'h' command
