@@ -1,0 +1,48 @@
+Speed testing, hand timed in seconds
+
+--------TEST 1---------
+3 mountains in home_mountain_forecast, 'h' command
+during testing, computer had approx 25 idle chrome tabs, idle spotify app, one tab streaming youtube video
+
+code:
+def home_mountain_forecast():
+    thread_list = []
+    for i in home_mountain_list:
+        thread_list.append(threading.Thread(target=snow_total, args=(i, home_mountain_forecast_days)))
+    for i in thread_list:
+        i.start()
+    for i in thread_list:
+        i.join()
+    return
+
+Time to complete:
+70, 95, 98, 94, 79 > 87.2 avg
+
+--------TEST 2---------
+3 mountains in home_mountain_forecast, 'h' command 
+during testing, computer had approx 25 idle chrome tabs, idle spotify app, one tab streaming youtube video
+
+code:
+def home_mountain_forecast():
+    for i in home_mountain_list:
+       snow_total(i, home_mountain_forecast_days)
+    return
+
+Time to complete:
+90, 55, 67, 65, 88 > 73 avg
+
+Notes: When running with visible browser windows, I was surpised to see that the iteration code
+opened all three windows without waiting for the first selenium script to end. (basically the same behavior as TEST 1 code)
+
+--------TEST 3---------
+Single mountain in home_mountain_list test, 'h' command
+during testing, computer had approx 25 idle chrome tabs, idle spotify app, one tab streaming youtube video
+
+code:
+def home_mountain_forecast():
+    for i in home_mountain_list:
+       snow_total(i, home_mountain_forecast_days)
+    return
+
+Time to complete:
+31, 32, 33, 28, 31 > 31 avg
